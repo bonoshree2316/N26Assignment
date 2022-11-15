@@ -1,0 +1,26 @@
+<!--
+* Name            :    customer_prod_info
+* Description     :    This lwc component used to show the customer product information
+* Created Date    :    [14th NOV , 2022]
+* Created By      :    [Bonoshree Mondal]
+*
+* Date Modified        Modified By             Description of the update
+   14th-NOV-2022      Bonoshree Mondal          Created
+-->
+
+<template>
+
+    <lightning-card>
+        <p class="slds-p-horizontal_small">
+            <template if:true={data}>
+                Product Name : {data.productName}<br/>
+                Country : {data.country}<br/>
+                Cost per calender month : {data.Cost_per_calender_month} {data.currencyType}<br/>
+                ATM fee in other currency : {data.ATM_fee_in_other_currency}%<br/>
+                Card replacement cost : {data.Card_replacement_cost} {data.currencyType}<br/>
+            </template>
+
+        </p>
+    </lightning-card>
+
+</template>
